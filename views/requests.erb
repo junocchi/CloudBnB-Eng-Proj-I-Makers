@@ -1,0 +1,32 @@
+<h1>Requests</h1>
+<p>Here are your requests to view and approve.</p>
+
+<div class="request-list-container">
+
+  <div class="req-col">
+    <h2>Booking requests</h2>
+    <% @users_requests.each do |request| %>
+    <div class="request">
+      for space ID: <%= request.space_id %> -
+      <% if request.approved == true %>
+        APPROVED
+      <% elsif request.approved == nil %>
+        PENDING
+      <% else %>
+        DECLINED
+      <% end %>
+    </div>
+    <% end %>
+  </div>
+  
+  <div class="req-col">
+    <h2>Booking requests for my spaces</h2>
+    <% @requests_on_my_spaces.each do |request| %>
+    <div class="request">
+      for space ID: <%= request.space_id %> - <%= request.book_in %> - <%= request.book_out %>
+    </div>
+    <% end %>
+  </div>
+
+</div>
+

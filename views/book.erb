@@ -1,0 +1,28 @@
+<h1>Feel at home, anywhere</h1>
+
+<h4><%= @space.name %></h4>
+<div class="space-listing">
+
+  <div>
+    Description: <%= @space.description %>
+  </div>
+  <p>
+    Address: <%= @space.address%>
+  </p>
+  <p>
+    Price: £<%= @space.price%>
+  </p>
+  This space is available:<br>
+  <%  @availabilities.each do |date| %>
+    From: <%= date.book_in %> To: <%= date.book_out %><br>
+  <% end %>
+
+  <form method="POST" action="/request">
+    <label for="book_in">Book in date:</label>
+    <input type="text" class="" placeholder="YYYY-MM-DD" name="book_in">
+    <label for="book_out">Book out date:</label>
+    <input type="text" class="" placeholder="YYYY-MM-DD" name="book_out">
+    <input type="submit" value="Request">
+  </form>
+
+</div>

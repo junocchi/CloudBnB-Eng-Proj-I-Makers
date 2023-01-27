@@ -1,0 +1,28 @@
+
+
+  <h1>Book a Space </h1>
+
+  <p>Hi, come in, take a look around! Here is a list of spaces available to book through Cloud bnb. See one you like? Click on the space to make a booking request. 
+  </p>
+  <a href="create-space"><button value="list a space" >list a space</button></a>
+
+    <form method="GET/" action="spaces">  <!--missing params -->
+      <label for="date-from">Date from</label>
+      <input type="date" placeholder="DD/MM/YYYY" name="date-from">
+      <label for="date-to">Date to</label>
+      <input type="date" placeholder="DD/MM/YYYY" name="date-to">
+      
+      <input type="submit" value="submit" />
+    </form>
+
+    <div class="space-listing">
+    <% @spaces.each do |space|%>
+    <div class="space-card">
+       <h2> <%= space["name"]%></h2>
+       <p><%= space["description"]%></p>
+       <a href="/book/<%= space.id%>">Book now</a>
+        </div>
+        <% end%></>
+  </div>
+  
+  

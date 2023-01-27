@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+body{
+    font-family: "Open Sans";
+    color: #000;
+    background-color: #ccc;
+    margin: 0;
+}
+
+.signup-form, .create-space-form, .space-container, .space-listing{
+    display:flex;
+    flex-direction: column;
+    margin: 0 auto;
+    border-radius: 4px;
+    padding: 34px 24px 24px 24px;
+    max-width: 400px;
+    box-shadow: 0px 4px 12px #666;
+    background-color: teal;
+    color: #fff;
+}
+.req-col{
+    margin: 0 auto;
+    border-radius: 4px;
+    padding: 34px 24px 24px 24px;
+    max-width: 400px;
+    box-shadow: 0px 4px 12px #666;
+    background-color: teal;
+    color: #fff;
+    width: 40%;
+}
+.space-container{
+max-width: 640px;
+}
+
+.space-card{
+background-color: #fff;
+color:#000;
+padding: 22px;
+border-radius: 4px;
+margin-bottom: 40px ;
+}
+input,textarea {
+    overflow: visible;
+    box-shadow: 0px 2px 0px 0px #333;
+    border: 0px;
+    padding: 8px;
+    padding-left: 12px;
+    margin: 5px 0 42px 0;
+    background-color: #f8f8f8;
+    color: #000;
+}
+.container {
+    margin: 0 auto;
+    padding: 0 24px 124px 24px;
+    border-radius: 0 0 8px 8px;
+    max-width: 800px;
+    background-color: #fff;
+    background-image: url("/images/logo.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.header{
+    display: flex;
+}
+
+.logo img{
+width: 200px;
+}
+.nav{
+    margin-left: auto;
+    margin-top: 46px; 
+
+}
+.mast{
+    margin-bottom: 88px;
+}
+
+h1 {
+    font-size: 3.2rem;
+    color: #fff;
+}
+.home p, h1{
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+.nav a{
+    border:solid 3px #fff;
+    padding:8px 34px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.4rem;
+}
+.nav a:hover{
+color: #000;
+background-color: #fff;
+font-weight: bolder;
+}
+
+.nav li{
+display: inline;
+}
+
+.request-list-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.request{
+    background-color: #fff;
+    color:#000;
+    padding: 8px;
+    border-radius: 4px;
+    margin-bottom: 12px;
+}
+
+.space-listing{
+    max-width:100%;
+}
+
+
